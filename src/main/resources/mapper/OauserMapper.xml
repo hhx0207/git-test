@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athhx.mapper.OauserMapper">
+
+    <resultMap id="BaseResultMap" type="com.athhx.domain.Oauser">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="loginname" column="loginname" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="truename" column="truename" jdbcType="VARCHAR"/>
+            <result property="idcard" column="idcard" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+            <result property="job" column="job" jdbcType="VARCHAR"/>
+            <result property="photo" column="photo" jdbcType="VARCHAR"/>
+            <result property="roleid" column="roleid" jdbcType="INTEGER"/>
+            <result property="orgid" column="orgid" jdbcType="INTEGER"/>
+            <result property="deptid" column="deptid" jdbcType="INTEGER"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isdelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,loginname,password,
+        truename,idcard,age,
+        phone,sex,job,
+        photo,roleid,orgid,
+        deptid,state,isdelete
+    </sql>
+</mapper>

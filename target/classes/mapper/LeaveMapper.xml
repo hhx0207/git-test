@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athhx.mapper.LeaveMapper">
+
+    <resultMap id="BaseResultMap" type="com.athhx.domain.Leave">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="deptid" column="deptid" jdbcType="INTEGER"/>
+            <result property="starttime" column="starttime" jdbcType="TIMESTAMP"/>
+            <result property="endtime" column="endtime" jdbcType="TIMESTAMP"/>
+            <result property="lauchtime" column="lauchtime" jdbcType="TIMESTAMP"/>
+            <result property="days" column="days" jdbcType="INTEGER"/>
+            <result property="typeid" column="typeid" jdbcType="INTEGER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="adminid" column="adminid" jdbcType="INTEGER"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isdelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userid,deptid,
+        starttime,endtime,lauchtime,
+        days,typeid,remark,
+        adminid,state,isdelete
+    </sql>
+</mapper>

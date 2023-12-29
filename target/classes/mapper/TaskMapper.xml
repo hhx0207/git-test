@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athhx.mapper.TaskMapper">
+
+    <resultMap id="BaseResultMap" type="com.athhx.domain.Task">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="typeid" column="typeid" jdbcType="INTEGER"/>
+            <result property="taskid" column="taskid" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="adminid" column="adminid" jdbcType="INTEGER"/>
+            <result property="lauchtime" column="lauchtime" jdbcType="TIMESTAMP"/>
+            <result property="subtime" column="subtime" jdbcType="TIMESTAMP"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isdelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,typeid,
+        taskid,userid,adminid,
+        lauchtime,subtime,state,
+        isdelete
+    </sql>
+</mapper>

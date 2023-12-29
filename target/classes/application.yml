@@ -1,0 +1,23 @@
+server:
+  port: 88
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/office?serverTimezone=UTC
+    username: root
+    password: root
+  thymeleaf:
+    cache: false
+    prefix: classpath:/static/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix:
+      id-type: auto
+
+

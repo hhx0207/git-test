@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athhx.mapper.VcardMapper">
+
+    <resultMap id="BaseResultMap" type="com.athhx.domain.Vcard">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="usetime" column="usetime" jdbcType="TIMESTAMP"/>
+            <result property="deptid" column="deptid" jdbcType="INTEGER"/>
+            <result property="job" column="job" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="number" column="number" jdbcType="INTEGER"/>
+            <result property="adminid" column="adminid" jdbcType="INTEGER"/>
+            <result property="lauchtime" column="lauchtime" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isdelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userid,usetime,
+        deptid,job,phone,
+        number,adminid,lauchtime,
+        remark,state,isdelete
+    </sql>
+</mapper>

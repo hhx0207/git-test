@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athhx.mapper.AnnounceMapper">
+
+    <resultMap id="BaseResultMap" type="com.athhx.domain.Announce">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="starttime" column="starttime" jdbcType="TIMESTAMP"/>
+            <result property="endtime" column="endtime" jdbcType="TIMESTAMP"/>
+            <result property="subtime" column="subtime" jdbcType="TIMESTAMP"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isdelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,title,content,
+        starttime,endtime,subtime,
+        userid,isdelete
+    </sql>
+</mapper>

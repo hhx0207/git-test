@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athhx.mapper.RoomReserveMapper">
+
+    <resultMap id="BaseResultMap" type="com.athhx.domain.RoomReserve">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="roomid" column="roomid" jdbcType="INTEGER"/>
+            <result property="starttime" column="starttime" jdbcType="TIMESTAMP"/>
+            <result property="endtime" column="endtime" jdbcType="TIMESTAMP"/>
+            <result property="lauchtime" column="lauchtime" jdbcType="TIMESTAMP"/>
+            <result property="typeid" column="typeid" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="adminid" column="adminid" jdbcType="INTEGER"/>
+            <result property="subtime" column="subtime" jdbcType="TIMESTAMP"/>
+            <result property="state" column="state" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isdelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,roomid,starttime,
+        endtime,lauchtime,typeid,
+        userid,adminid,subtime,
+        state,isdelete
+    </sql>
+</mapper>
