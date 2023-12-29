@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
 * @createDate 2023-12-28 09:42:23
 * @Entity com.athhx.domain.Car
 */
-
+@Mapper
 public interface CarMapper extends BaseMapper<Car> {
 
 }
